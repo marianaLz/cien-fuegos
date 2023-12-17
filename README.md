@@ -1,49 +1,43 @@
 <p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
+  <a href="" rel="noopener">
+ <img width=200px src="https://i.imgur.com/nh7MEkY.png" alt="Project logo"></a>
 </p>
-<h1 align="center">
-  Gatsby Minimal Starter
-</h1>
 
-## 🚀 Quick start
+---
 
-1.  **Create a Gatsby site.**
+## 📝 Table of Contents
 
-    Use the Gatsby CLI to create a new site, specifying the minimal starter.
+- [About](#about)
+- [Main features](#main_features)
+- [Built Using](#built_using)
+- [Authors](#authors)
 
-    ```shell
-    # create a new Gatsby site using the minimal starter
-    npm init gatsby
-    ```
+## 🍕 About <a name = "about"></a>
 
-2.  **Start developing.**
+<p>
+Welcome to the Cien Fuegos project repository, a dedicated platform crafted for Neapolitan pizza enthusiasts.  Developed with a focus on simplicity and functionality, this project serves as a centralized hub for managing the culinary offerings of Chef Davide Giribaldi.
 
-    Navigate into your new site’s directory and start it up.
+Here, you can explore information about the restaurant and captivating photo gallery. Whether you're a developer, a pizza lover, or both, we invite you to met the flavor-rich world of Cien Fuegos. Cheers to crafting a delightful experience for pizza aficionados everywhere!
 
-    ```shell
-    cd my-gatsby-site/
-    npm run develop
-    ```
+</p>
 
-3.  **Open the code and start customizing!**
+## 💻 Main features <a name = "main_features"></a>
 
-    Your site is now running at http://localhost:8000!
+- Website created with Gatsby, a powerful web development tool based on React.
+- Attractive and functional design that highlights the identity of our project.
+- Optimized user experience to ensure easy and smooth navigation.
+- Fully responsive and compatible with mobile devices to reach a wider audience.
 
-    Edit `src/pages/index.js` to see your site update in real-time!
+## 🛠️ Built Using <a name = "built_using"></a>
 
-4.  **Learn more**
+- [React](https://react.dev/) - Javascript Library
+- [Gatsby](https://www.gatsbyjs.com/) - Web Framework
+- [ChakraUI](https://chakra-ui.com/) - UI Library
+- [Tabler Icons](https://tabler.io/icons) - Icons Library
 
-    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-    - [Tutorials](https://www.gatsbyjs.com/docs/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-    - [Guides](https://www.gatsbyjs.com/docs/how-to/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+## 🖋️ Authors <a name = "authors"></a>
 
-## 🚀 Quick start (Netlify)
+Cien Fuegos is lovingly created and maintained by our team:
 
-Deploy this starter with one click on [Netlify](https://app.netlify.com/signup):
-
-[<img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify" />](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-minimal)
+- [Mariana López](https://www.linkedin.com/in/marianalz/) - Software Developer
+- [Ana Marrón](https://www.linkedin.com/in/ana-marr%C3%B3n-3d/) - Product Designer
