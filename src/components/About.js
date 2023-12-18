@@ -79,8 +79,10 @@ const About = () => {
           objectPosition='right'
         />
         <Badge
-          bottom='4'
-          right='4'
+          bg='rgba(255,255,255,0.2)'
+          bottom={{ base: '1', lg: '20' }}
+          left='4'
+          colorScheme='whiteAlpha'
           position='absolute'
           fontSize={{ lg: 'md' }}
           textTransform='none'
