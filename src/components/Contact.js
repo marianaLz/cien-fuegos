@@ -43,7 +43,7 @@ const Contact = () => {
         flexDir='column'
         gap='4'
         h={{ base: '60vh', lg: '100vh' }}
-        justify='space-between'
+        justify={{ lg: 'space-between' }}
         px={{ base: '4', lg: '24', xl: '32' }}
         py='4'
         textAlign='center'
