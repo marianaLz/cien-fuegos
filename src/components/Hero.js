@@ -7,12 +7,14 @@ import photoImage from '../images/pizza-napolitana-en-san-miguel-de-allende.jpg'
 import photoImageMob from '../images/pizza-napolitana-en-san-miguel-de-allende.png';
 
 const Hero = () => {
+  const viewHeight = window.innerHeight;
   const image = useBreakpointValue({ base: photoImageMob, lg: photoImage });
+
   return (
     <Flex
       flexDir={{ base: 'column', lg: 'row' }}
       gap='8'
-      minH='100vh'
+      minH='viewHeight'
       scrollSnapAlign='start'
     >
       <Image
@@ -20,7 +22,7 @@ const Hero = () => {
         name='Pizza napolitana en San Miguel de Allende'
         title='Pizza napolitana en San Miguel de Allende'
         src={image}
-        h={{ base: '40vh', md: '50vh', lg: '100vh' }}
+        h={{ base: viewHeight * 0.4, md: viewHeight * 0.05, lg: viewHeight }}
         objectFit='cover'
         objectPosition={{ base: 'bottom', lg: 'right' }}
         w={{ lg: '50vw' }}
@@ -30,7 +32,7 @@ const Hero = () => {
         flexDir='column'
         fontFamily='birch-std'
         gap='2'
-        h={{ lg: '100vh' }}
+        h={{ lg: viewHeight }}
         justify='center'
         letterSpacing='widest'
         px={{ base: '4', lg: '24', xl: '32' }}
