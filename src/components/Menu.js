@@ -20,7 +20,6 @@ const Menu = () => {
     <Tabs
       colorScheme='red'
       isFitted
-      isLazy
       minH='100vh'
       scrollSnapAlign='start'
       size='lg'
