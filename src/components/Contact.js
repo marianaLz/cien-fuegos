@@ -39,7 +39,7 @@ const Contact = () => {
       </Flex>
       <Flex
         align='center'
-        flex='1'
+        flex={{ lg: '1' }}
         flexDir='column'
         gap='4'
         h={{ lg: '100vh' }}
@@ -51,7 +51,7 @@ const Contact = () => {
       >
         <Flex
           align='center'
-          flex='1'
+          flex={{ lg: '1' }}
           flexDir='column'
           gap='4'
           justify='center'

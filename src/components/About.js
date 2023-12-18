@@ -77,6 +77,7 @@ const About = () => {
           src={photoImage}
           objectFit='cover'
           objectPosition='right'
+          w='full'
         />
         <Badge
           bg='rgba(255,255,255,0.2)'
