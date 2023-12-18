@@ -42,7 +42,7 @@ const Contact = ({ viewHeight }) => {
         flex={{ lg: '1' }}
         flexDir='column'
         gap='4'
-        h={{ lg: viewHeight }}
+        h={{ base: viewHeight * 0.6, lg: viewHeight }}
         justify='space-between'
         px={{ base: '4', lg: '24', xl: '32' }}
         py='4'
