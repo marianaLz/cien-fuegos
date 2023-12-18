@@ -19,15 +19,15 @@ import {
 
 import pitahayaLogo from '../images/pitahaya.png';
 
-const Contact = ({ viewHeight }) => {
+const Contact = () => {
   return (
     <Flex
       flexDir={{ base: 'column', lg: 'row' }}
       gap='8'
-      h={viewHeight}
+      h='100vh'
       scrollSnapAlign='start'
     >
-      <Flex h={{ base: viewHeight * 0.4, lg: viewHeight }} w={{ lg: '50vw' }}>
+      <Flex h={{ base: '40vh', lg: '100vh' }} w={{ lg: '50vw' }}>
         <iframe
           height='100%'
           loading='lazy'
@@ -42,7 +42,7 @@ const Contact = ({ viewHeight }) => {
         flex={{ lg: '1' }}
         flexDir='column'
         gap='4'
-        h={{ base: viewHeight * 0.6, lg: viewHeight }}
+        h={{ base: '60vh', lg: '100vh' }}
         justify='space-between'
         px={{ base: '4', lg: '24', xl: '32' }}
         py='4'
