@@ -53,11 +53,11 @@ const Contact = () => {
           flexDir='column'
           gap='4'
           justify='center'
-          py={{ base: '8', lg: '12' }}
+          py={{ lg: '12' }}
         >
           <Text
             fontFamily='birch-std'
-            fontSize='3xl'
+            fontSize={{ base: '2xl', lg: '3xl' }}
             fontWeight='semibold'
             letterSpacing='widest'
           >

@@ -12,7 +12,11 @@ import '../styles.css';
 
 const IndexPage = () => {
   return (
-    <Flex flexDir='column' fontFamily='Montserrat'>
+    <Flex
+      flexDir='column'
+      fontFamily='Montserrat'
+      fontSize={{ base: 'sm', lg: 'base' }}
+    >
       <Flex
         as='main'
         flexDir='column'

@@ -63,7 +63,7 @@ const Menu = () => {
                 }}
                 overflow='scroll'
                 px={{ base: '4', lg: '24', xl: '32' }}
-                py={{ base: '12', lg: '24' }}
+                py={{ base: '4', lg: '24' }}
                 w={{ base: 'full', lg: '50vw' }}
               >
                 {Object.keys(item.categories).map((category) => (
@@ -71,7 +71,7 @@ const Menu = () => {
                     <Text
                       as='h2'
                       fontFamily='birch-std'
-                      fontSize='3xl'
+                      fontSize={{ base: '2xl', lg: '3xl' }}
                       fontWeight='semibold'
                       letterSpacing='widest'
                       textAlign='center'

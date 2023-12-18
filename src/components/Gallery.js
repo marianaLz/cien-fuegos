@@ -39,23 +39,24 @@ const Gallery = () => {
         justify={{ xl: 'center' }}
         overflow='scroll'
         px={{ base: '4', lg: '24', xl: '32' }}
-        py={{ base: '12', lg: '16' }}
+        py={{ base: '4', lg: '16' }}
         textAlign='center'
         w={{ lg: '50vw' }}
       >
         <Text
           fontFamily='birch-std'
-          fontSize='3xl'
+          fontSize={{ base: '2xl', lg: '3xl' }}
           fontWeight='semibold'
           letterSpacing='widest'
         >
           ¡visítanos!
         </Text>
-        <Text>
-          En Cien Fuegos, nos enorgullece brindarte una experiencia gastronómica
-          única, donde la calidad de nuestros platillos es nuestra prioridad.
-        </Text>
         <Show above='md'>
+          <Text>
+            En Cien Fuegos, nos enorgullece brindarte una experiencia
+            gastronómica única, donde la calidad de nuestros platillos es
+            nuestra prioridad.
+          </Text>
           <Text>
             Todos los jueves, te invitamos a multiplicar el placer con nuestra
             oferta especial: ¡2x1 en nuestras irresistibles pizzas! Solo válido
