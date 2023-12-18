@@ -31,7 +31,7 @@ const Hero = ({ viewHeight }) => {
         flexDir='column'
         fontFamily='birch-std'
         gap='2'
-        h={{ lg: viewHeight }}
+        h={{ base: viewHeight * 0.6, lg: viewHeight }}
         justify='center'
         letterSpacing='widest'
         px={{ base: '4', lg: '24', xl: '32' }}
