@@ -40,7 +40,7 @@ const Gallery = () => {
         overflow='scroll'
         px={{ base: '4', lg: '24', xl: '32' }}
         py={{ base: '4', lg: '16' }}
-        textAlign='center'
+        textAlign={{ lg: 'center' }}
         w={{ lg: '50vw' }}
       >
         <Text
@@ -48,6 +48,7 @@ const Gallery = () => {
           fontSize={{ base: '2xl', lg: '3xl' }}
           fontWeight='semibold'
           letterSpacing='widest'
+          textAlign='center'
         >
           ¡visítanos!
         </Text>

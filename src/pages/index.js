@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 
 import { Flex } from '@chakra-ui/react';
 
@@ -11,28 +11,6 @@ import Contact from '../components/Contact';
 import '../styles.css';
 
 const IndexPage = () => {
-  const enterFullscreen = () => {
-    const doc = window.document.documentElement;
-
-    if (doc.requestFullscreen) {
-      doc.requestFullscreen();
-    } else if (doc.mozRequestFullScreen) {
-      doc.mozRequestFullScreen();
-    } else if (doc.webkitRequestFullscreen) {
-      doc.webkitRequestFullscreen();
-    } else if (doc.msRequestFullscreen) {
-      doc.msRequestFullscreen();
-    }
-  };
-
-  useEffect(() => {
-    const handleClick = () => {
-      enterFullscreen();
-    };
-    document.addEventListener('scroll', handleClick);
-    return () => document.removeEventListener('scroll', handleClick);
-  }, []);
-
   return (
     <Flex
       flexDir='column'

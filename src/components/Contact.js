@@ -23,6 +23,7 @@ const Contact = () => {
   return (
     <Flex
       flexDir={{ base: 'column', lg: 'row' }}
+      gap='8'
       minH='100vh'
       scrollSnapAlign='start'
     >
@@ -38,9 +39,10 @@ const Contact = () => {
       </Flex>
       <Flex
         align='center'
+        flex='1'
         flexDir='column'
         gap='4'
-        h={{ base: '60vh', lg: '100vh' }}
+        h={{ lg: '100vh' }}
         justify='space-between'
         px={{ base: '4', lg: '24', xl: '32' }}
         py='4'
@@ -109,7 +111,7 @@ const Contact = () => {
         </Flex>
         <Flex align='center' gap='1'>
           <Text color='gray' fontSize='sm'>
-            Hecho con amor por
+            Hecho con amor en
           </Text>
           <Link
             href='https://pitahaya.studio/'

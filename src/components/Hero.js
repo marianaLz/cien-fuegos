@@ -11,6 +11,7 @@ const Hero = () => {
   return (
     <Flex
       flexDir={{ base: 'column', lg: 'row' }}
+      gap='8'
       minH='100vh'
       scrollSnapAlign='start'
     >
@@ -29,7 +30,7 @@ const Hero = () => {
         flexDir='column'
         fontFamily='birch-std'
         gap='2'
-        h='100vh'
+        h={{ lg: '100vh' }}
         justify='center'
         letterSpacing='widest'
         px={{ base: '4', lg: '24', xl: '32' }}

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Flex, Image, Show, Text } from '@chakra-ui/react';
+import { Badge, Flex, Image, Show, Text } from '@chakra-ui/react';
 
 import photoImage from '../images/chef-davide-giribaldi.jpeg';
 
@@ -21,7 +21,7 @@ const About = () => {
         overflow='scroll'
         px={{ base: '4', lg: '24', xl: '32' }}
         py={{ base: '4', lg: '16' }}
-        textAlign='center'
+        textAlign={{ lg: 'center' }}
         w={{ lg: '50vw' }}
       >
         <Text
@@ -29,6 +29,7 @@ const About = () => {
           fontSize={{ base: '2xl', lg: '3xl' }}
           fontWeight='semibold'
           letterSpacing='widest'
+          textAlign='center'
         >
           sobre nosotros
         </Text>
@@ -64,16 +65,30 @@ const About = () => {
           </Text>
         </Show>
       </Flex>
-      <Image
-        alt='Chef Davide Giribaldi'
-        name='Chef Davide Giribaldi'
-        title='Chef Davide Giribaldi'
-        src={photoImage}
+      <Flex
         h={{ base: '40vh', lg: '100vh' }}
-        objectFit='cover'
-        objectPosition='right'
+        position='relative'
         w={{ lg: '50vw' }}
-      />
+      >
+        <Image
+          alt='Chef Davide Giribaldi'
+          name='Chef Davide Giribaldi'
+          title='Chef Davide Giribaldi'
+          src={photoImage}
+          objectFit='cover'
+          objectPosition='right'
+        />
+        <Badge
+          bottom='4'
+          right='4'
+          position='absolute'
+          fontSize={{ lg: 'md' }}
+          textTransform='none'
+          variant='subtle'
+        >
+          Chef Davide Giribaldi
+        </Badge>
+      </Flex>
     </Flex>
   );
 };
