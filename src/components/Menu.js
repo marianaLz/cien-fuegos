@@ -15,12 +15,12 @@ import {
 import { formatPrice } from '../utils';
 import { menu } from '../data';
 
-const Menu = () => {
+const Menu = ({ viewHeight }) => {
   return (
     <Tabs
       colorScheme='red'
       isFitted
-      minH='100vh'
+      minH={viewHeight}
       scrollSnapAlign='start'
       size='lg'
     >
@@ -28,7 +28,7 @@ const Menu = () => {
         bg='white'
         pos='absolute'
         right='0'
-        top={{ base: 'calc(40vh - 44px)', lg: '0' }}
+        top={{ base: `${viewHeight * 0.4 - 44}px`, lg: '0' }}
         w={{ base: '100%', lg: '50vw' }}
         zIndex='1'
       >
@@ -47,16 +47,16 @@ const Menu = () => {
                 name='Comida italiana en San Miguel de Allende'
                 title='Comida italiana en San Miguel de Allende'
                 src={item.image}
-                h={{ base: '40vh', lg: '100vh' }}
+                h={{ base: viewHeight * 0.4, lg: viewHeight }}
                 objectFit='cover'
-                objectPosition='top'
+                objectPosition={{ lg: 'top' }}
                 w={{ lg: '50vw' }}
               />
               <Flex
                 align='center'
                 flexDir='column'
                 gap='12'
-                h={{ base: 'auto', lg: '100vh' }}
+                h={{ base: 'auto', lg: viewHeight }}
                 justify={{
                   lg: index === 0 || index === 2 ? 'center' : 'flex-start',
                 }}

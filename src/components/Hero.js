@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 
 import { Flex, Image, Text, useBreakpointValue } from '@chakra-ui/react';
 
@@ -6,16 +6,8 @@ import logoImage from '../images/cien-fuegos-pizza-and-comfort-food.jpeg';
 import photoImage from '../images/pizza-napolitana-en-san-miguel-de-allende.jpg';
 import photoImageMob from '../images/pizza-napolitana-en-san-miguel-de-allende.png';
 
-const Hero = () => {
-  const [viewHeight, setViewHeight] = useState(0);
+const Hero = ({ viewHeight }) => {
   const image = useBreakpointValue({ base: photoImageMob, lg: photoImage });
-
-  useEffect(() => {
-    // Verificar si window está disponible antes de usarlo
-    if (typeof window !== 'undefined') {
-      setViewHeight(window.innerHeight);
-    }
-  }, []);
 
   return (
     <Flex

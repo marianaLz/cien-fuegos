@@ -8,9 +8,13 @@ import Menu from '../components/Menu';
 import Gallery from '../components/Gallery';
 import Contact from '../components/Contact';
 
+import { useViewHeight } from '../utils';
+
 import '../styles.css';
 
 const IndexPage = () => {
+  const viewHeight = useViewHeight();
+
   return (
     <Flex
       flexDir='column'
@@ -24,11 +28,11 @@ const IndexPage = () => {
         overflow='scroll'
         scrollSnapType='y mandatory'
       >
-        <Hero />
-        <About />
-        <Menu />
-        <Gallery />
-        <Contact />
+        <Hero viewHeight={viewHeight} />
+        <About viewHeight={viewHeight} />
+        <Menu viewHeight={viewHeight} />
+        <Gallery viewHeight={viewHeight} />
+        <Contact viewHeight={viewHeight} />
       </Flex>
     </Flex>
   );
