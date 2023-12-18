@@ -20,7 +20,7 @@ const Menu = ({ viewHeight }) => {
     <Tabs
       colorScheme='red'
       isFitted
-      minH={viewHeight}
+      h={viewHeight}
       scrollSnapAlign='start'
       size='lg'
     >

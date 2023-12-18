@@ -24,7 +24,7 @@ const Contact = ({ viewHeight }) => {
     <Flex
       flexDir={{ base: 'column', lg: 'row' }}
       gap='8'
-      minH={viewHeight}
+      h={viewHeight}
       scrollSnapAlign='start'
     >
       <Flex h={{ base: viewHeight * 0.4, lg: viewHeight }} w={{ lg: '50vw' }}>

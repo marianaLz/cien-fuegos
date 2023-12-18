@@ -28,7 +28,7 @@ const Gallery = ({ viewHeight }) => {
   return (
     <Flex
       flexDir={{ base: 'column-reverse', lg: 'row' }}
-      minH={viewHeight}
+      h={viewHeight}
       scrollSnapAlign='start'
     >
       <Flex
