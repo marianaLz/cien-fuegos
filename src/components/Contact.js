@@ -31,7 +31,7 @@ const Contact = () => {
         <iframe
           height='100%'
           loading='lazy'
-          referrerpolicy='no-referrer-when-downgrade'
+          referrerPolicy='no-referrer-when-downgrade'
           src='https://www.google.com/maps/embed?pb=!4v1702882673310!6m8!1m7!1sCAoSLEFGMVFpcE5zZmVBeVVJODZFUTl0LXFLMEU4V3JYMWVLZC1uRDQ2X2FBcmpp!2m2!1d20.99029657251741!2d-100.7833646379271!3f40!4f0!5f0.7820865974627469'
           title='Cien Fuegos | Pizza & comfort food'
           width='100%'

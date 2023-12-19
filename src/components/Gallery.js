@@ -104,13 +104,14 @@ const Gallery = ({ viewHeight }) => {
         target='_blank'
         w={{ lg: '50vw' }}
       >
-        {photos.map((item) => (
+        {photos.map((item, index) => (
           <Image
             alt='Comida italiana en San Miguel de Allende'
             name='Comida italiana en San Miguel de Allende'
             title='Comida italiana en San Miguel de Allende'
             src={item}
             h={{ base: viewHeight * 0.11, lg: viewHeight * 0.33 }}
+            key={`gallery-${index}`}
             objectFit='cover'
             objectPosition='right'
             w='100%'

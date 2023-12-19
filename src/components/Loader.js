@@ -23,7 +23,7 @@ const Loader = () => {
       justify='center'
       pos='fixed'
       opacity={show ? '1' : '0'}
-      transition='opacity 1.5s ease, z-index 0s ease 1.5s'
+      transition='opacity 0.5s ease, z-index 0s ease 0.5s'
       w='full'
       zIndex={show ? '2' : '-1'}
     >
