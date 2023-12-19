@@ -24,7 +24,6 @@ const Contact = () => {
     <Flex
       flexDir={{ base: 'column', lg: 'row' }}
       gap='8'
-      h='100vh'
       id='contacto'
       scrollSnapAlign={{ lg: 'start' }}
     >
@@ -43,7 +42,7 @@ const Contact = () => {
         flex={{ lg: '1' }}
         flexDir='column'
         gap='8'
-        h={{ base: '65vh', lg: '100vh' }}
+        h={{ lg: '100vh' }}
         justify={{ lg: 'space-between' }}
         px={{ base: '4', lg: '24', xl: '32' }}
         py='4'

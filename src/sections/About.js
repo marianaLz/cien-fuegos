@@ -9,7 +9,7 @@ const About = ({ viewHeight }) => {
     <Flex
       flexDir={{ base: 'column-reverse', lg: 'row' }}
       justify='flex-end'
-      h={viewHeight}
+      h={{ lg: viewHeight }}
       id='nosotros'
       scrollSnapAlign={{ lg: 'start' }}
     >
@@ -17,11 +17,12 @@ const About = ({ viewHeight }) => {
         align='center'
         flexDir='column'
         gap='4'
-        h={{ base: viewHeight * 0.65, lg: viewHeight }}
+        h={{ lg: viewHeight }}
         justify={{ xl: 'center' }}
         overflow='scroll'
         px={{ base: '4', lg: '24', xl: '32' }}
-        py={{ base: '4', lg: '16' }}
+        pb={{ base: '12', lg: '16' }}
+        pt={{ base: '4', lg: '16' }}
         textAlign={{ lg: 'center' }}
         w={{ lg: '50vw' }}
       >

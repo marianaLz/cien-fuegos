@@ -8,7 +8,7 @@ const Gallery = ({ viewHeight }) => {
   return (
     <Flex
       flexDir={{ base: 'column-reverse', lg: 'row' }}
-      h={viewHeight}
+      h={{ lg: viewHeight }}
       id='visitanos'
       scrollSnapAlign={{ lg: 'start' }}
     >
@@ -16,12 +16,13 @@ const Gallery = ({ viewHeight }) => {
         align='center'
         flexDir='column'
         gap='4'
-        h={{ base: viewHeight * 0.65, lg: viewHeight }}
+        h={{ lg: viewHeight }}
         id='visitanos'
         justify={{ xl: 'center' }}
         overflow='scroll'
         px={{ base: '4', lg: '24', xl: '32' }}
-        py={{ base: '4', lg: '16' }}
+        pb={{ base: '12', lg: '16' }}
+        pt={{ base: '4', lg: '16' }}
         textAlign={{ lg: 'center' }}
         w={{ lg: '50vw' }}
       >

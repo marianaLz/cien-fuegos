@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 
-import { Flex } from '@chakra-ui/react';
+import { Flex, Show } from '@chakra-ui/react';
 
 import About from '../sections/About';
 import Contact from '../sections/Contact';
@@ -67,13 +67,15 @@ const IndexPage = () => {
       fontSize={{ base: 'sm', lg: 'base' }}
     >
       <Loader />
-      <Control currentIndex={currentIndex} sliderElements={sliderElements} />
+      <Show above='lg'>
+        <Control currentIndex={currentIndex} sliderElements={sliderElements} />
+      </Show>
 
       <Flex
         as='main'
         className='carousel'
         flexDir='column'
-        h='100vh'
+        h={{ lg: '100vh' }}
         overflow='scroll'
         ref={ref}
         scrollSnapType='y mandatory'

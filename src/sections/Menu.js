@@ -19,7 +19,7 @@ const Menu = ({ viewHeight }) => {
   return (
     <Tabs
       colorScheme='red'
-      h={viewHeight}
+      h={{ lg: viewHeight }}
       id='menu'
       isFitted
       scrollSnapAlign={{ lg: 'start' }}
@@ -39,10 +39,10 @@ const Menu = ({ viewHeight }) => {
           </Tab>
         ))}
       </TabList>
-      <TabPanels h='full'>
+      <TabPanels>
         {Object.values(menu).map((item, index) => (
-          <TabPanel h='full' key={`tab-panel-${index}`} p='0'>
-            <Flex flexDir={{ base: 'column', lg: 'row' }} h='full'>
+          <TabPanel key={`tab-panel-${index}`} p='0'>
+            <Flex flexDir={{ base: 'column', lg: 'row' }}>
               <Image
                 alt='Comida italiana en San Miguel de Allende'
                 name='Comida italiana en San Miguel de Allende'
@@ -56,18 +56,24 @@ const Menu = ({ viewHeight }) => {
               <Flex
                 align='center'
                 flexDir='column'
-                gap='12'
-                h={{ base: viewHeight * 0.65, lg: viewHeight }}
+                gap={{ base: '6', lg: '12' }}
+                h={{ lg: viewHeight }}
                 justify={{
                   lg: index === 0 || index === 2 ? 'center' : 'flex-start',
                 }}
                 overflow='scroll'
                 px={{ base: '4', lg: '24', xl: '32' }}
-                py={{ base: '4', lg: '24' }}
+                pb={{ base: '12', lg: '24' }}
+                pt={{ base: '4', lg: '24' }}
                 w={{ base: 'full', lg: '50vw' }}
               >
                 {Object.keys(item.categories).map((category) => (
-                  <Flex flexDir='column' gap='8' key={category} w='full'>
+                  <Flex
+                    flexDir='column'
+                    gap={{ base: '4', lg: '8' }}
+                    key={category}
+                    w='full'
+                  >
                     <Text
                       as='h2'
                       fontFamily='birch-std'
