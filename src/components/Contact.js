@@ -27,7 +27,7 @@ const Contact = () => {
       h='100vh'
       scrollSnapAlign='start'
     >
-      <Flex h={{ base: '40vh', lg: '100vh' }} w={{ lg: '50vw' }}>
+      <Flex h={{ base: '35vh', lg: '100vh' }} w={{ lg: '50vw' }}>
         <iframe
           height='100%'
           loading='lazy'
@@ -42,7 +42,7 @@ const Contact = () => {
         flex={{ lg: '1' }}
         flexDir='column'
         gap='4'
-        h={{ base: '60vh', lg: '100vh' }}
+        h={{ base: '65vh', lg: '100vh' }}
         justify={{ lg: 'space-between' }}
         px={{ base: '4', lg: '24', xl: '32' }}
         py='4'

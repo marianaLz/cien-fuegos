@@ -21,7 +21,7 @@ const Hero = ({ viewHeight }) => {
         name='Pizza napolitana en San Miguel de Allende'
         title='Pizza napolitana en San Miguel de Allende'
         src={image}
-        h={{ base: viewHeight * 0.4, md: viewHeight * 0.05, lg: viewHeight }}
+        h={{ base: viewHeight * 0.35, md: viewHeight * 0.5, lg: viewHeight }}
         objectFit='cover'
         objectPosition={{ base: 'bottom', lg: 'right' }}
         w={{ lg: '50vw' }}
@@ -31,7 +31,7 @@ const Hero = ({ viewHeight }) => {
         flexDir='column'
         fontFamily='birch-std'
         gap='2'
-        h={{ base: viewHeight * 0.6, lg: viewHeight }}
+        h={{ base: viewHeight * 0.65, lg: viewHeight }}
         justify='center'
         letterSpacing='widest'
         px={{ base: '4', lg: '24', xl: '32' }}

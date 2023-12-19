@@ -28,7 +28,7 @@ const Menu = ({ viewHeight }) => {
         bg='white'
         pos='absolute'
         right='0'
-        top={{ base: `${viewHeight * 0.4 - 44}px`, lg: '0' }}
+        top={{ base: `${viewHeight * 0.35 - 44}px`, lg: '0' }}
         w={{ base: '100%', lg: '50vw' }}
         zIndex='1'
       >
@@ -47,7 +47,7 @@ const Menu = ({ viewHeight }) => {
                 name='Comida italiana en San Miguel de Allende'
                 title='Comida italiana en San Miguel de Allende'
                 src={item.image}
-                h={{ base: viewHeight * 0.4, lg: viewHeight }}
+                h={{ base: viewHeight * 0.35, lg: viewHeight }}
                 objectFit='cover'
                 objectPosition={{ lg: 'top' }}
                 w={{ lg: '50vw' }}
@@ -56,7 +56,7 @@ const Menu = ({ viewHeight }) => {
                 align='center'
                 flexDir='column'
                 gap='12'
-                h={{ base: 'auto', lg: viewHeight }}
+                h={{ base: viewHeight * 0.65, lg: viewHeight }}
                 justify={{
                   lg: index === 0 || index === 2 ? 'center' : 'flex-start',
                 }}

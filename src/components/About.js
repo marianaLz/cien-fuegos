@@ -16,7 +16,7 @@ const About = ({ viewHeight }) => {
         align='center'
         flexDir='column'
         gap='4'
-        h={{ lg: viewHeight }}
+        h={{ base: viewHeight * 0.65, lg: viewHeight }}
         justify={{ xl: 'center' }}
         overflow='scroll'
         px={{ base: '4', lg: '24', xl: '32' }}
@@ -66,7 +66,7 @@ const About = ({ viewHeight }) => {
         </Show>
       </Flex>
       <Flex
-        h={{ base: viewHeight * 0.4, lg: viewHeight }}
+        h={{ base: viewHeight * 0.35, lg: viewHeight }}
         position='relative'
         w={{ lg: '50vw' }}
       >
@@ -81,11 +81,11 @@ const About = ({ viewHeight }) => {
         />
         <Badge
           bg='rgba(255,255,255,0.2)'
-          bottom={{ base: '1', lg: '20' }}
+          bottom={{ base: '8', lg: '20' }}
           left='4'
           colorScheme='whiteAlpha'
           position='absolute'
-          fontSize={{ lg: 'md' }}
+          fontSize={{ base: 'xs', lg: 'md' }}
           textTransform='none'
           variant='subtle'
         >

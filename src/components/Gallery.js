@@ -35,7 +35,7 @@ const Gallery = ({ viewHeight }) => {
         align='center'
         flexDir='column'
         gap='4'
-        h={{ base: viewHeight * 0.6, lg: viewHeight }}
+        h={{ base: viewHeight * 0.65, lg: viewHeight }}
         justify={{ xl: 'center' }}
         overflow='scroll'
         px={{ base: '4', lg: '24', xl: '32' }}
@@ -98,7 +98,7 @@ const Gallery = ({ viewHeight }) => {
         as='a'
         columns='3'
         gap='1'
-        h={{ base: viewHeight * 0.4, lg: viewHeight }}
+        h={{ base: viewHeight * 0.35, lg: viewHeight }}
         href='https://www.instagram.com/cienfuegos.sma/'
         rel='noopener noreferrer'
         target='_blank'
@@ -110,7 +110,7 @@ const Gallery = ({ viewHeight }) => {
             name='Comida italiana en San Miguel de Allende'
             title='Comida italiana en San Miguel de Allende'
             src={item}
-            h={{ base: viewHeight * 0.13, lg: viewHeight * 0.33 }}
+            h={{ base: viewHeight * 0.11, lg: viewHeight * 0.33 }}
             objectFit='cover'
             objectPosition='right'
             w='100%'
