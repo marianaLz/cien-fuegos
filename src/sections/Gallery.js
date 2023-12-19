@@ -4,11 +4,11 @@ import { Flex, Image, Link, SimpleGrid, Show, Text } from '@chakra-ui/react';
 
 import { photos } from '../data';
 
-const Gallery = ({ viewHeight }) => {
+const Gallery = () => {
   return (
     <Flex
       flexDir={{ base: 'column-reverse', lg: 'row' }}
-      h={{ lg: viewHeight }}
+      h={{ lg: '100vh' }}
       id='visitanos'
       scrollSnapAlign={{ lg: 'start' }}
     >
@@ -16,7 +16,7 @@ const Gallery = ({ viewHeight }) => {
         align='center'
         flexDir='column'
         gap='4'
-        h={{ lg: viewHeight }}
+        h={{ lg: '100vh' }}
         id='visitanos'
         justify={{ xl: 'center' }}
         overflow='scroll'
@@ -81,7 +81,7 @@ const Gallery = ({ viewHeight }) => {
         as='a'
         columns='3'
         gap='1'
-        h={{ base: viewHeight * 0.35, lg: viewHeight }}
+        h={{ lg: '100vh' }}
         href='https://www.instagram.com/cienfuegos.sma/'
         rel='noopener noreferrer'
         target='_blank'
@@ -93,7 +93,7 @@ const Gallery = ({ viewHeight }) => {
             name='Comida italiana en San Miguel de Allende'
             title='Comida italiana en San Miguel de Allende'
             src={item}
-            h={{ base: viewHeight * 0.11, lg: viewHeight * 0.33 }}
+            h={{ base: '15vh', lg: '33vh' }}
             key={`gallery-${index}`}
             objectFit='cover'
             objectPosition='right'

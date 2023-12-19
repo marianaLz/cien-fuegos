@@ -4,12 +4,12 @@ import { Badge, Flex, Image, Show, Text } from '@chakra-ui/react';
 
 import photoImage from '../images/chef-davide-giribaldi.jpeg';
 
-const About = ({ viewHeight }) => {
+const About = () => {
   return (
     <Flex
       flexDir={{ base: 'column-reverse', lg: 'row' }}
       justify='flex-end'
-      h={{ lg: viewHeight }}
+      h={{ lg: '100vh' }}
       id='nosotros'
       scrollSnapAlign={{ lg: 'start' }}
     >
@@ -17,7 +17,7 @@ const About = ({ viewHeight }) => {
         align='center'
         flexDir='column'
         gap='4'
-        h={{ lg: viewHeight }}
+        h={{ lg: '100vh' }}
         justify={{ xl: 'center' }}
         overflow='scroll'
         px={{ base: '4', lg: '24', xl: '32' }}
@@ -68,7 +68,7 @@ const About = ({ viewHeight }) => {
         </Show>
       </Flex>
       <Flex
-        h={{ base: viewHeight * 0.35, lg: viewHeight }}
+        h={{ base: '33vh', lg: '100vh' }}
         position='relative'
         w={{ lg: '50vw' }}
       >

@@ -11,17 +11,15 @@ import Menu from '../sections/Menu';
 import Control from '../components/Control';
 import Loader from '../components/Loader';
 
-import { useViewHeight } from '../utils';
-
 import '../styles.css';
 
 const IndexPage = () => {
   const ref = useRef(null);
   const elements = useRef([]);
   const elementIndices = useRef({});
-  const viewHeight = useViewHeight();
   const sliderElements = elements.current;
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [viewHeight, setViewHeight] = useState(0);
 
   useEffect(() => {
     if (ref.current !== null) ref.current.scrollTo(0, 0);
@@ -60,6 +58,10 @@ const IndexPage = () => {
     };
   }, [sliderElements, ref]);
 
+  useEffect(() => {
+    if (typeof window !== 'undefined') setViewHeight(window.innerHeight);
+  }, []);
+
   return (
     <Flex
       flexDir='column'
@@ -81,10 +83,10 @@ const IndexPage = () => {
         scrollSnapType='y mandatory'
       >
         <Hero viewHeight={viewHeight} />
-        <About viewHeight={viewHeight} />
-        <Menu viewHeight={viewHeight} />
-        <Gallery viewHeight={viewHeight} />
-        <Contact viewHeight={viewHeight} />
+        <About />
+        <Menu />
+        <Gallery />
+        <Contact />
       </Flex>
     </Flex>
   );
