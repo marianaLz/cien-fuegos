@@ -14,6 +14,7 @@ const Hero = ({ viewHeight }) => {
       flexDir={{ base: 'column', lg: 'row' }}
       gap='8'
       h={viewHeight}
+      id='inicio'
       scrollSnapAlign='start'
     >
       <Image

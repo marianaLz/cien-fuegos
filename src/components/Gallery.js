@@ -36,6 +36,7 @@ const Gallery = ({ viewHeight }) => {
         flexDir='column'
         gap='4'
         h={{ base: viewHeight * 0.65, lg: viewHeight }}
+        id='visitanos'
         justify={{ xl: 'center' }}
         overflow='scroll'
         px={{ base: '4', lg: '24', xl: '32' }}

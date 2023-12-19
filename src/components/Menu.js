@@ -19,8 +19,9 @@ const Menu = ({ viewHeight }) => {
   return (
     <Tabs
       colorScheme='red'
-      isFitted
       h={viewHeight}
+      id='menu'
+      isFitted
       scrollSnapAlign='start'
       size='lg'
     >

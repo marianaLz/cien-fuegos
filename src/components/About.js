@@ -10,6 +10,7 @@ const About = ({ viewHeight }) => {
       flexDir={{ base: 'column-reverse', lg: 'row' }}
       justify='flex-end'
       h={viewHeight}
+      id='nosotros'
       scrollSnapAlign='start'
     >
       <Flex
