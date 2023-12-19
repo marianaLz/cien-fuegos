@@ -18,6 +18,8 @@ import {
   IconLink,
 } from '@tabler/icons-react';
 
+import '../styles.css';
+
 const NotFoundPage = () => {
   return (
     <Flex
