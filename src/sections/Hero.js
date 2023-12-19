@@ -15,7 +15,7 @@ const Hero = ({ viewHeight }) => {
       gap='8'
       h={viewHeight}
       id='inicio'
-      scrollSnapAlign='start'
+      scrollSnapAlign={{ lg: 'start' }}
     >
       <Image
         alt='Pizza napolitana en San Miguel de Allende'

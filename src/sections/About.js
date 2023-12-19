@@ -11,7 +11,7 @@ const About = ({ viewHeight }) => {
       justify='flex-end'
       h={viewHeight}
       id='nosotros'
-      scrollSnapAlign='start'
+      scrollSnapAlign={{ lg: 'start' }}
     >
       <Flex
         align='center'

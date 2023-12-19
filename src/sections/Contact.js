@@ -26,7 +26,7 @@ const Contact = () => {
       gap='8'
       h='100vh'
       id='contacto'
-      scrollSnapAlign='start'
+      scrollSnapAlign={{ lg: 'start' }}
     >
       <Flex h={{ base: '35vh', lg: '100vh' }} w={{ lg: '50vw' }}>
         <iframe

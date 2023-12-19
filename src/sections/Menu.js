@@ -22,7 +22,7 @@ const Menu = ({ viewHeight }) => {
       h={viewHeight}
       id='menu'
       isFitted
-      scrollSnapAlign='start'
+      scrollSnapAlign={{ lg: 'start' }}
       size='lg'
     >
       <TabList

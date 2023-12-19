@@ -16,7 +16,7 @@ const Control = ({ currentIndex, sliderElements }) => {
       right='2'
       top='calc(50% - 40px)'
       id='indicator'
-      zIndex='1'
+      zIndex='2'
     >
       {sliderElements.map((element, index) => (
         <Box

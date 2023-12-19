@@ -25,7 +25,7 @@ const Loader = () => {
       opacity={show ? '1' : '0'}
       transition='opacity 0.5s ease, z-index 0s ease 0.5s'
       w='full'
-      zIndex={show ? '2' : '-1'}
+      zIndex={show ? '3' : '-1'}
     >
       <Image className='spinner' src={icon} />
     </Flex>

@@ -10,7 +10,7 @@ const Gallery = ({ viewHeight }) => {
       flexDir={{ base: 'column-reverse', lg: 'row' }}
       h={viewHeight}
       id='visitanos'
-      scrollSnapAlign='start'
+      scrollSnapAlign={{ lg: 'start' }}
     >
       <Flex
         align='center'
