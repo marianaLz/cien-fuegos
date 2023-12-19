@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 
 import { Flex } from '@chakra-ui/react';
 
@@ -14,6 +14,12 @@ import '../styles.css';
 
 const IndexPage = () => {
   const viewHeight = useViewHeight();
+  const ref = useRef(null);
+
+  useEffect(() => {
+    if (ref.current !== null) ref.current.scrollTo(0, 0);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [ref.current]);
 
   return (
     <Flex
@@ -26,6 +32,7 @@ const IndexPage = () => {
         flexDir='column'
         h='100vh'
         overflow='scroll'
+        ref={ref}
         scrollSnapType='y mandatory'
       >
         <Hero viewHeight={viewHeight} />
