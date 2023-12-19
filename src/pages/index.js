@@ -2,11 +2,12 @@ import React, { useEffect, useRef } from 'react';
 
 import { Flex } from '@chakra-ui/react';
 
-import Hero from '../components/Hero';
 import About from '../components/About';
-import Menu from '../components/Menu';
-import Gallery from '../components/Gallery';
 import Contact from '../components/Contact';
+import Gallery from '../components/Gallery';
+import Hero from '../components/Hero';
+import Loader from '../components/Loader';
+import Menu from '../components/Menu';
 
 import { useViewHeight } from '../utils';
 
@@ -35,6 +36,7 @@ const IndexPage = () => {
         ref={ref}
         scrollSnapType='y mandatory'
       >
+        <Loader />
         <Hero viewHeight={viewHeight} />
         <About viewHeight={viewHeight} />
         <Menu viewHeight={viewHeight} />

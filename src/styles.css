@@ -8,6 +8,19 @@
   }
 }
 
+.spinner {
+  animation: spin 4s linear infinite;
+}
+
 ::-webkit-scrollbar {
   display: none !important;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
