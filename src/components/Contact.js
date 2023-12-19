@@ -41,7 +41,7 @@ const Contact = () => {
         align='center'
         flex={{ lg: '1' }}
         flexDir='column'
-        gap='4'
+        gap='8'
         h={{ base: '65vh', lg: '100vh' }}
         justify={{ lg: 'space-between' }}
         px={{ base: '4', lg: '24', xl: '32' }}
