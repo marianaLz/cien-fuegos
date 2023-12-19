@@ -12,8 +12,8 @@ import {
   Text,
 } from '@chakra-ui/react';
 
-import { formatPrice } from '../utils';
 import { menu } from '../data';
+import { formatPrice } from '../utils';
 
 const Menu = ({ viewHeight }) => {
   return (

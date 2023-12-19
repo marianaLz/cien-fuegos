@@ -1,13 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url('https://use.typekit.net/cip8eua.css');
 
-@media (min-width: 992px) {
-  html,
-  body {
-    scroll-behavior: smooth;
-  }
-}
-
 .spinner {
   animation: spin 4s linear infinite;
 }

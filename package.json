@@ -27,7 +27,6 @@
     "gatsby-plugin-offline": "^6.12.3",
     "gatsby-plugin-sharp": "^5.12.3",
     "gatsby-plugin-sitemap": "^6.12.3",
-    "gatsby-plugin-smoothscroll": "^1.2.0",
     "gatsby-source-filesystem": "^5.12.1",
     "gatsby-transformer-sharp": "^5.12.3",
     "react": "^18.2.0",

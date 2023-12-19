@@ -2,8 +2,6 @@ import React, { useEffect, useRef, useState } from 'react';
 
 import { Box, Flex } from '@chakra-ui/react';
 
-import scrollTo from 'gatsby-plugin-smoothscroll';
-
 import About from '../components/About';
 import Contact from '../components/Contact';
 import Gallery from '../components/Gallery';
@@ -17,26 +15,50 @@ import '../styles.css';
 
 const IndexPage = () => {
   const ref = useRef(null);
+  const elements = useRef([]);
+  const elementIndices = useRef({});
   const viewHeight = useViewHeight();
-  const [location, setLocation] = useState('#inicio');
+  const sliderElements = elements.current;
+  const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
     if (ref.current !== null) ref.current.scrollTo(0, 0);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [ref.current]);
 
-  const navigation = [
-    '#inicio',
-    '#nosotros',
-    '#menu',
-    '#visitanos',
-    '#contacto',
-  ];
+  useEffect(() => {
+    const carouselElements = ref.current.children;
+    for (let i = 0; i < carouselElements.length; i++) {
+      const element = carouselElements[i];
+      elements.current.push(element);
+      elementIndices.current[element.id] = i;
+    }
+  }, [ref]);
 
-  const navigate = (item) => {
-    scrollTo(item);
-    setLocation(item);
-  };
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const activated = entries.reduce(
+          (max, entry) =>
+            entry.intersectionRatio > max.intersectionRatio ? entry : max,
+          entries[0]
+        );
+
+        if (activated.intersectionRatio > 0) {
+          const activatedIndex =
+            elementIndices.current[activated.target.getAttribute('id')];
+          setCurrentIndex(activatedIndex);
+        }
+      },
+      { root: ref.current, threshold: 0.5 }
+    );
+
+    sliderElements.forEach((element) => observer.observe(element));
+
+    return () => {
+      sliderElements.forEach((element) => observer.unobserve(element));
+    };
+  }, [elements, elementIndices, sliderElements, ref]);
 
   return (
     <Flex
@@ -44,50 +66,56 @@ const IndexPage = () => {
       fontFamily='Montserrat'
       fontSize={{ base: 'sm', lg: 'base' }}
     >
+      <Loader />
+
+      <Flex
+        align='center'
+        bg='rgba(255,255,255,0.5)'
+        borderRadius='full'
+        flexDir='column'
+        gap='3'
+        justify='center'
+        p='1'
+        position='fixed'
+        right='2'
+        top='calc(50% - 40px)'
+        id='indicator'
+        zIndex='1'
+      >
+        {sliderElements.map((element, index) => (
+          <Box
+            as='button'
+            bg='#CC0019'
+            borderRadius='full'
+            h='2'
+            key={`dot-${index}`}
+            onClick={() => element.scrollIntoView({ behavior: 'smooth' })}
+            opacity={currentIndex === index ? '1' : '0.5'}
+            transform={currentIndex === index ? 'scale(1.5)' : 'scale(1)'}
+            transition='all 0.2s ease'
+            w='2'
+            _hover={{
+              opacity: '1',
+              transform: 'scale(1.5)',
+            }}
+          />
+        ))}
+      </Flex>
+
       <Flex
         as='main'
+        className='carousel'
         flexDir='column'
         h='100vh'
         overflow='scroll'
         ref={ref}
         scrollSnapType='y mandatory'
       >
-        <Loader />
         <Hero viewHeight={viewHeight} />
         <About viewHeight={viewHeight} />
         <Menu viewHeight={viewHeight} />
         <Gallery viewHeight={viewHeight} />
         <Contact viewHeight={viewHeight} />
-        <Flex
-          align='center'
-          bg='rgba(255,255,255,0.5)'
-          borderRadius='full'
-          flexDir='column'
-          gap='2'
-          justify='center'
-          p='1'
-          position='fixed'
-          right='2'
-          top='calc(50% - 40px)'
-        >
-          {navigation.map((item) => (
-            <Box
-              as='button'
-              bg='#CC0019'
-              borderRadius='full'
-              h='2'
-              onClick={() => navigate(item)}
-              opacity={location === item ? '1' : '0.5'}
-              transform={location === item ? 'scale(1.5)' : 'scale(1)'}
-              transition='all 0.2s ease'
-              w='2'
-              _hover={{
-                opacity: '1',
-                transform: 'scale(1.5)',
-              }}
-            />
-          ))}
-        </Flex>
       </Flex>
     </Flex>
   );

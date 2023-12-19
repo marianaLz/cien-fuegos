@@ -2,33 +2,14 @@ import React from 'react';
 
 import { Flex, Image, Link, SimpleGrid, Show, Text } from '@chakra-ui/react';
 
-import photoImage1 from '../images/cien-fuegos-sma-1.jpeg';
-import photoImage2 from '../images/cien-fuegos-sma-2.jpeg';
-import photoImage3 from '../images/cien-fuegos-sma-3.jpeg';
-import photoImage4 from '../images/cien-fuegos-sma-4.jpeg';
-import photoImage5 from '../images/cien-fuegos-sma-5.jpeg';
-import photoImage6 from '../images/cien-fuegos-sma-6.jpeg';
-import photoImage7 from '../images/cien-fuegos-sma-7.jpeg';
-import photoImage8 from '../images/cien-fuegos-sma-8.jpeg';
-import photoImage9 from '../images/cien-fuegos-sma-9.jpeg';
-
-const photos = [
-  photoImage1,
-  photoImage2,
-  photoImage3,
-  photoImage4,
-  photoImage5,
-  photoImage6,
-  photoImage7,
-  photoImage8,
-  photoImage9,
-];
+import { photos } from '../data';
 
 const Gallery = ({ viewHeight }) => {
   return (
     <Flex
       flexDir={{ base: 'column-reverse', lg: 'row' }}
       h={viewHeight}
+      id='visitanos'
       scrollSnapAlign='start'
     >
       <Flex

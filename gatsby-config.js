@@ -40,7 +40,6 @@ module.exports = {
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
     'gatsby-plugin-sitemap',
-    'gatsby-plugin-smoothscroll',
     'gatsby-plugin-offline',
   ],
 };
