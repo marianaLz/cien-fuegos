@@ -1,13 +1,15 @@
 import React, { useEffect, useRef, useState } from 'react';
 
-import { Box, Flex } from '@chakra-ui/react';
+import { Flex } from '@chakra-ui/react';
 
-import About from '../components/About';
-import Contact from '../components/Contact';
-import Gallery from '../components/Gallery';
-import Hero from '../components/Hero';
+import About from '../sections/About';
+import Contact from '../sections/Contact';
+import Gallery from '../sections/Gallery';
+import Hero from '../sections/Hero';
+import Menu from '../sections/Menu';
+
+import Control from '../components/Control';
 import Loader from '../components/Loader';
-import Menu from '../components/Menu';
 
 import { useViewHeight } from '../utils';
 
@@ -28,12 +30,11 @@ const IndexPage = () => {
 
   useEffect(() => {
     const carouselElements = ref.current.children;
-    for (let i = 0; i < carouselElements.length; i++) {
-      const element = carouselElements[i];
+    [...carouselElements].forEach((element, i) => {
       elements.current.push(element);
       elementIndices.current[element.id] = i;
-    }
-  }, [ref]);
+    });
+  }, [ref, sliderElements]);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -44,11 +45,10 @@ const IndexPage = () => {
           entries[0]
         );
 
-        if (activated.intersectionRatio > 0) {
-          const activatedIndex =
-            elementIndices.current[activated.target.getAttribute('id')];
-          setCurrentIndex(activatedIndex);
-        }
+        const activatedIndex =
+          elementIndices.current[activated.target.getAttribute('id')];
+
+        if (activated.intersectionRatio > 0) setCurrentIndex(activatedIndex);
       },
       { root: ref.current, threshold: 0.5 }
     );
@@ -58,7 +58,7 @@ const IndexPage = () => {
     return () => {
       sliderElements.forEach((element) => observer.unobserve(element));
     };
-  }, [elements, elementIndices, sliderElements, ref]);
+  }, [sliderElements, ref]);
 
   return (
     <Flex
@@ -67,40 +67,7 @@ const IndexPage = () => {
       fontSize={{ base: 'sm', lg: 'base' }}
     >
       <Loader />
-
-      <Flex
-        align='center'
-        bg='rgba(255,255,255,0.5)'
-        borderRadius='full'
-        flexDir='column'
-        gap='3'
-        justify='center'
-        p='1'
-        position='fixed'
-        right='2'
-        top='calc(50% - 40px)'
-        id='indicator'
-        zIndex='1'
-      >
-        {sliderElements.map((element, index) => (
-          <Box
-            as='button'
-            bg='#CC0019'
-            borderRadius='full'
-            h='2'
-            key={`dot-${index}`}
-            onClick={() => element.scrollIntoView({ behavior: 'smooth' })}
-            opacity={currentIndex === index ? '1' : '0.5'}
-            transform={currentIndex === index ? 'scale(1.5)' : 'scale(1)'}
-            transition='all 0.2s ease'
-            w='2'
-            _hover={{
-              opacity: '1',
-              transform: 'scale(1.5)',
-            }}
-          />
-        ))}
-      </Flex>
+      <Control currentIndex={currentIndex} sliderElements={sliderElements} />
 
       <Flex
         as='main'
