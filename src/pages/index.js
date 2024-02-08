@@ -102,7 +102,7 @@ export const Head = () => (
       content='Pizza Napolitana y cocina italiana en San Miguel de Allende'
     />
     <meta name='robots' content='INDEX,FOLLOW' />
-    {/* <link rel='canonical' href='https://pitahaya.studio' /> */}
+    <link rel='canonical' href='https://cien-fuegos.com.mx/' />
     <meta
       property='og:site_name'
       content='Cien Fuegos | Pizza & comfort food'
@@ -113,7 +113,7 @@ export const Head = () => (
       content='Pizza Napolitana y cocina italiana en San Miguel de Allende'
     />
     <meta property='og:type' content='website' />
-    {/* <meta property='og:url' content='https://pitahaya.studio' /> */}
+    <meta property='og:url' content='https://cien-fuegos.com.mx/' />
     <meta property='og:image' content='https://i.imgur.com/nh7MEkY.png' />
     <meta
       property='og:image:secure_url'
