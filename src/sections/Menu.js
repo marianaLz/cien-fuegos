@@ -30,7 +30,7 @@ const Menu = () => {
         bg='white'
         pos='absolute'
         right='0'
-        top={{ base: 'calc(33vh - 44px)', lg: '0' }}
+        top={{ base: 'calc(40vh - 44px)', lg: '0' }}
         w={{ base: '100%', lg: '50vw' }}
         zIndex='1'
       >
@@ -49,7 +49,7 @@ const Menu = () => {
                 name='Comida italiana en San Miguel de Allende'
                 title='Comida italiana en San Miguel de Allende'
                 src={item.image}
-                h={{ base: '33vh', lg: '100vh' }}
+                h={{ base: '40vh', lg: '100vh' }}
                 objectFit='cover'
                 objectPosition={{ lg: 'top' }}
                 w={{ lg: '50vw' }}
@@ -64,7 +64,7 @@ const Menu = () => {
                 }}
                 overflow='scroll'
                 px={{ base: '4', lg: '24', xl: '32' }}
-                pb={{ base: '12', lg: '24' }}
+                pb={{ base: '16', lg: '24' }}
                 pt={{ base: '4', lg: '24' }}
                 w={{ base: 'full', lg: '50vw' }}
               >

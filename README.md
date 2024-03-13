@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="" rel="noopener">
+  <a href="https://cien-fuegos.com.mx" rel="noopener">
  <img width=200px src="https://i.imgur.com/nh7MEkY.png" alt="Project logo"></a>
 </p>
 
@@ -27,6 +27,8 @@ Here, you can explore information about the restaurant and captivating photo gal
 - Attractive and functional design that highlights the identity of our project.
 - Optimized user experience to ensure easy and smooth navigation.
 - Fully responsive and compatible with mobile devices to reach a wider audience.
+
+Visit the website [here](https://cien-fuegos.com.mx)
 
 ## 🛠️ Built Using <a name = "built_using"></a>
 

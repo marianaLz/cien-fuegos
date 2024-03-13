@@ -165,7 +165,12 @@ export const menu = {
         {
           name: 'Monopolio, Lager',
           description: 'San Luis Postosí',
-          price: 95,
+          price: 110,
+        },
+        {
+          name: 'Monopolio, I.P.A.',
+          description: 'San Luis Postosí',
+          price: 120,
         },
         {
           name: 'Hercules, Pilsner',
@@ -180,12 +185,12 @@ export const menu = {
         {
           name: 'Dos Aves, APA',
           description: 'San Miguel de Allende',
-          price: 100,
+          price: 110,
         },
         {
           name: 'Dos Aves, Stout',
           description: 'San Miguel de Allende',
-          price: 100,
+          price: 110,
         },
       ],
       spritz: [
@@ -202,7 +207,7 @@ export const menu = {
           price: 170,
         },
       ],
-      gin: [
+      more: [
         {
           name: 'Gin Tonic',
           price: 170,
@@ -215,6 +220,10 @@ export const menu = {
           name: 'Very Beery Gin',
           price: 180,
         },
+        {
+          name: 'Negroni',
+          price: 170,
+        },
       ],
     },
   },
@@ -223,46 +232,46 @@ export const menu = {
     categories: {
       'espumoso/sparkling': [
         {
-          name: 'Flor de Rime brut 800',
-          price: 780,
+          name: 'Flor de Rime brut',
+          price: 850,
         },
       ],
       'blanco/white': [
         {
-          name: 'Chardonay, Magoni, Mexico',
-          price: 750,
+          name: 'Chardonay, Magoni, México',
+          price: 770,
         },
         {
           name: 'Pinot Grigio, Chiaro, Italia',
           price: 750,
         },
         {
-          name: 'Sauvignon Blanc, Lagrimas, Mexico',
+          name: 'Sauvignon Blanc, Lágrimas, México',
           price: 750,
         },
       ],
       'rosado/rosse': [
         {
           name: 'Magoni Bland, México',
-          price: 650,
+          price: 730,
         },
       ],
       'tinto/red': [
         {
-          name: 'House, Blend, Mexico',
+          name: 'House, Blend, México',
           price: 750,
         },
         {
-          name: 'La Casona, CbS / Merlot, Mexico',
-          price: 950,
+          name: 'La Casona, CbS / Merlot, México',
+          price: 1000,
         },
         {
           name: 'Malbec, Altovilero, Argentina',
-          price: 750,
+          price: 780,
         },
         {
           name: '12 Lunas, Blend, España',
-          price: 950,
+          price: 1000,
         },
         {
           name: 'Viceversa Roble, Blend, España',
@@ -271,19 +280,15 @@ export const menu = {
       ],
       'copa/glass': [
         {
-          name: 'Sparkling',
-          price: 170,
+          name: 'Blanco / withe',
+          price: 150,
         },
         {
-          name: 'Blanco/withe',
-          price: 145,
+          name: 'Rosado / Rosse',
+          price: 150,
         },
         {
-          name: 'Rosado/Rosse',
-          price: 145,
-        },
-        {
-          name: 'Tinto/Red',
+          name: 'Tinto / Red',
           price: 165,
         },
       ],
