@@ -71,7 +71,7 @@ const Menu = () => {
                 {Object.keys(item.categories).map((category) => (
                   <Flex
                     flexDir='column'
-                    gap={{ base: '4', lg: '8' }}
+                    gap={{ base: '4', lg: '4' }}
                     key={category}
                     w='full'
                   >
@@ -89,16 +89,11 @@ const Menu = () => {
                       {item.categories[category].map((element) => (
                         <Flex
                           align='center'
-                          gap='2'
-                          justify='space-between'
+                          flexDir='column'
                           key={element.name}
                         >
-                          <Flex flexDir='column'>
-                            <Text>{element.name}</Text>
-                            <Text fontSize='xs'>{element.description}</Text>
-                          </Flex>
-                          <Divider flex='1' />
-                          <Text>{formatPrice(element.price)}</Text>
+                          <Text>{element.name}</Text>
+                          <Text fontSize='xs'>{element.description}</Text>
                         </Flex>
                       ))}
                     </Flex>

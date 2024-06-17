@@ -20,24 +20,36 @@ export const menu = {
     categories: {
       entradas: [
         {
-          name: 'Ensalada de Betabel Coliflor y Lechugas',
+          name: 'Coliflor cremoso al horno de leña',
+          description: 'Wood oven creamy cauliflower',
+        },
+        {
+          name: 'Ensalada verde y jitomate',
+          description: 'Green salad and tomato',
+        },
+        {
+          name: 'Guacamole roto con hierbas',
+          description: 'Rustic guacamole with herbs',
+        },
+        {
+          name: 'Ensalada de betabel, coliflor y lechugas',
           description: 'Beetroot / Cauliflower / Lettuce Salad',
-          price: 210,
         },
         {
-          name: 'Ceviche Vegano',
-          description: 'Vegan Ceviche',
-          price: 195,
+          name: 'Ceviche vegano',
+          description: 'Vegan ceviche',
         },
         {
-          name: 'Mejillones al Vino Blanco',
-          description: 'Mussels in White Wine',
-          price: 330,
+          name: 'Mejillones al vino blanco',
+          description: 'Mussels in white wine',
         },
         {
-          name: 'Brocheta de Res Y Chorizo',
-          description: 'Beef and Chorizo Kebab',
-          price: 240,
+          name: 'Carpaccio de res a la brasa',
+          description: 'Beef carpaccio',
+        },
+        {
+          name: 'Brocheta de res y chorizo',
+          description: 'Beef and chorizo Kebab',
         },
       ],
     },
@@ -45,96 +57,84 @@ export const menu = {
   COMIDA: {
     image: comidaImage,
     categories: {
-      pastas: [
+      pasta: [
         {
-          name: 'Lasagna alla Bolognese',
-          price: 290,
+          name: 'Tagliatelle al Pomodoro e Basilico',
         },
         {
-          name: 'Tagliolini alla Matriciana',
-          price: 290,
+          name: 'Pasta cremosa con queso y champiñón',
+          description: 'Cream cheese and mushroom pasta',
+        },
+        {
+          name: 'Lasagna a la Bolognese',
+        },
+        {
+          name: 'Tagliolini a la Matriciana',
         },
         {
           name: 'Fettuccine al Ragu',
-          price: 290,
         },
         {
           name: 'Ravioli de Espinaca y Ricota al burro',
-          price: 290,
         },
       ],
       'parrilla-grill': [
         {
           name: 'Trucha salmonada Al Carbon',
-          description: 'Rainbow Trount on the grill',
-          price: 350,
+          description: 'Rainbow Trount grilled',
         },
         {
           name: 'Chuleton De Cerdo',
-          description: 'Grilled Porck Chop',
-          price: 360,
+          description: 'Grilled Pork Chop',
         },
         {
-          name: 'New York Steake',
-          price: 460,
+          name: 'New York Steak',
         },
         {
           name: 'Hamburguesa de res',
-          price: 230,
+          description: 'Beef burger',
         },
       ],
       'pizza clásica': [
         {
           name: 'Margherita',
-          price: 250,
         },
         {
           name: 'Prosciutto e Funghi',
-          price: 300,
         },
         {
           name: 'Chorizo / Arugula / Parmesano',
-          price: 300,
         },
         {
           name: '4 Stagioni',
-          price: 290,
         },
         {
           name: 'Vegetariana',
-          price: 260,
         },
         {
           name: 'Salame',
-          price: 300,
         },
         {
           name: 'Marinara',
-          price: 220,
         },
       ],
-      'pizzas blancas': [
+      'pizza blanca': [
         {
           name: '4 Quesos',
-          price: 310,
         },
         {
           name: 'Carbonara',
-          price: 320,
         },
         {
           name: 'Prosciutto de Parma',
-          price: 320,
         },
       ],
-      'pizzas destacadas': [
+      'pizza signature': [
         {
           name: 'Calzone',
-          price: 330,
         },
         {
           name: 'Focaccia Rellena',
-          price: 300,
         },
       ],
     },
@@ -144,16 +144,16 @@ export const menu = {
     categories: {
       postres: [
         {
+          name: 'Panna Cotta y frutos rojos',
+        },
+        {
           name: 'Tartaleta de chocolate',
-          price: 180,
         },
         {
           name: 'Parfait De Zabayon',
-          price: 150,
         },
         {
-          name: 'Tiramisu',
-          price: 150,
+          name: 'Tiramisú',
         },
       ],
     },
@@ -165,64 +165,51 @@ export const menu = {
         {
           name: 'Monopolio, Lager',
           description: 'San Luis Postosí',
-          price: 110,
         },
         {
           name: 'Monopolio, I.P.A.',
           description: 'San Luis Postosí',
-          price: 120,
         },
         {
           name: 'Hercules, Pilsner',
           description: 'Querétaro',
-          price: 120,
         },
         {
           name: 'Ginger Beer, 0% alcohol',
           description: 'Querétaro',
-          price: 100,
         },
         {
           name: 'Dos Aves, APA',
           description: 'San Miguel de Allende',
-          price: 110,
         },
         {
           name: 'Dos Aves, Stout',
           description: 'San Miguel de Allende',
-          price: 110,
         },
       ],
       spritz: [
         {
           name: 'Aperol Spritz',
-          price: 170,
         },
         {
           name: 'American Spritz',
-          price: 180,
         },
         {
           name: 'Sicilian Spritz',
-          price: 170,
         },
       ],
       more: [
         {
           name: 'Gin Tonic',
-          price: 170,
         },
         {
           name: 'Mexican Mule',
-          price: 180,
         },
         {
           name: 'Very Beery Gin',
-          price: 180,
         },
         {
           name: 'Negroni',
-          price: 170,
         },
       ],
     },
@@ -233,63 +220,50 @@ export const menu = {
       'espumoso/sparkling': [
         {
           name: 'Flor de Rime brut',
-          price: 850,
         },
       ],
       'blanco/white': [
         {
           name: 'Chardonay, Magoni, México',
-          price: 770,
         },
         {
           name: 'Pinot Grigio, Chiaro, Italia',
-          price: 750,
         },
         {
           name: 'Sauvignon Blanc, Lágrimas, México',
-          price: 750,
         },
       ],
       'rosado/rosse': [
         {
           name: 'Magoni Bland, México',
-          price: 730,
         },
       ],
       'tinto/red': [
         {
           name: 'House, Blend, México',
-          price: 750,
         },
         {
           name: 'La Casona, CbS / Merlot, México',
-          price: 1000,
         },
         {
           name: 'Malbec, Altovilero, Argentina',
-          price: 780,
         },
         {
           name: '12 Lunas, Blend, España',
-          price: 1000,
         },
         {
           name: 'Viceversa Roble, Blend, España',
-          price: 750,
         },
       ],
       'copa/glass': [
         {
           name: 'Blanco / withe',
-          price: 150,
         },
         {
           name: 'Rosado / Rosse',
-          price: 150,
         },
         {
           name: 'Tinto / Red',
-          price: 165,
         },
       ],
     },

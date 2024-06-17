@@ -67,7 +67,7 @@ const NotFoundPage = () => {
           <Text>Carretera San Miguel de Allende - Dolores Hidalgo km 7.5</Text>
           <Text>San Miguel de Allende, Gto., México</Text>
           <Text>Todos los días de 13:00 a 20:00</Text>
-          <Text fontStyle='italic'>415 114 7275</Text>
+          <Text>415 114 7275</Text>
         </Flex>
         <Divider />
         <Flex gap='2'>
